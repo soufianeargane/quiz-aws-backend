@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -35,13 +34,8 @@ body {
   padding: 10px;
 }
 .container .stats .stat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 5px;
   margin-bottom: 20px;
 }
@@ -253,16 +247,10 @@ section div .input {
 section div .input:focus {
   border: 2px solid #227C70;
 }
-section div .input::-webkit-input-placeholder {
-  color: #1f2e2c;
-}
 section div .input::-moz-placeholder {
   color: #1f2e2c;
 }
 section div .input:-ms-input-placeholder {
-  color: #1f2e2c;
-}
-section div .input::-ms-input-placeholder {
   color: #1f2e2c;
 }
 section div .input::placeholder {
@@ -305,12 +293,8 @@ section .valid-input {
   }
 }
 .progress-bar .stepper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 20px;
 }
 .progress-bar .stepper::before {
@@ -320,42 +304,25 @@ section .valid-input {
   height: 4px;
   top: 39%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: rgb(85, 77, 77);
 }
 .progress-bar .stepper .step {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   z-index: 10;
 }
 .progress-bar .stepper .step .step-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background-color: #0e3742;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .progress-bar .stepper .step .step-item:hover {
@@ -438,15 +405,9 @@ section .valid-input {
   }
 }
 .info .quiz-app .quiz-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: #1C315E;
   color: white;
@@ -458,6 +419,8 @@ section .valid-input {
   }
 }
 .info .quiz-app .quiz {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 20px;
   background-color: #fff;
   margin-top: 15px;
@@ -479,18 +442,16 @@ section .valid-input {
   }
 }
 .info .quiz-app .answers-area {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #fff;
   padding: 0 20px 20px 20px;
 }
 .info .quiz-app .answers-area .answer {
   background-color: #f9f9f9;
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .info .quiz-app .answers-area .answer:not(:last-child) {
   border-bottom: 1px solid #eaeaea;
@@ -509,8 +470,6 @@ section .valid-input {
   font-weight: bold;
 }
 .info .quiz-app .button-father {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .info .quiz-app .button-father .submit-answer {
@@ -531,35 +490,21 @@ section .valid-input {
 .info .quiz-app .bullets {
   border-top: 1px solid #eaeaea;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .info .quiz-app .bullets .spans {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .info .quiz-app .bullets .spans span {
   width: 25px;
   height: 9px;
   background-color: #c4c0c0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .info .quiz-app .bullets .spans .on {
@@ -578,4 +523,4 @@ section .valid-input {
 }
 .info .result .bad {
   color: red;
-}
+}/*# sourceMappingURL=main.css.map */
